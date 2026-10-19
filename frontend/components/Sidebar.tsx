@@ -16,7 +16,9 @@ export default function Sidebar({ user }: { user: User }) {
       <nav className="flex-1 space-y-1">
         {NAV_ITEMS.map((item) => {
           const allowed = isAllowed(user, item);
-          const active = pathname === item.href;
+          const active =
+            pathname === item.href ||
+            (item.href !== "/dashboard" && pathname.startsWith(item.href + "/"));
           return (
             <Link
               key={item.href}
