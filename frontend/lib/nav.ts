@@ -15,6 +15,8 @@ export const NAV_ITEMS: NavItem[] = [
   { href: "/dashboard/editors-room", label: "Editors' room", role: "EDITOR" },
   { href: "/dashboard/users", label: "Users", permission: "users.view" },
   { href: "/dashboard/roles", label: "Roles", permission: "roles.view" },
+  { href: "/dashboard/permissions", label: "Permissions", permission: "permissions.manage" },
+  { href: "/dashboard/audit", label: "Audit log", permission: "audit.view" },
   { href: "/dashboard/access-tester", label: "Access tester" },
 ];
 
